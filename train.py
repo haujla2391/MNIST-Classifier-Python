@@ -37,6 +37,8 @@ def train():
         avg_loss = total_loss / batch_count
         print(f"Epoch {epoch+1}, Loss {avg_loss:.4f}")
 
+    return m
 
-if __name__ == "__main__":
-    train()
+
+# if __name__ == "__main__":
+#     train()
