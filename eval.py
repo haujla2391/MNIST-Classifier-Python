@@ -1,5 +1,4 @@
 import data
-import train
 import torch
 
 
@@ -23,9 +22,3 @@ def evaluate(model, batch_size=64):
 
     acc = correct / total
     return acc
-
-if __name__ == "__main__":
-    m = train.train()
-
-    accuracy = evaluate(m)
-    print(accuracy)
