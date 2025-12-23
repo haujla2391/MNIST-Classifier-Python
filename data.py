@@ -35,13 +35,13 @@ def get_dataloaders(batch_size: int):
 
     return train_loader, test_loader
 
-if __name__ == "__main__":
-    batchSize = 64
-    train_loader, test_loader = get_dataloaders(batchSize)
+# if __name__ == "__main__":
+#     batchSize = 64
+#     train_loader, test_loader = get_dataloaders(batchSize)
 
-    images, labels = next(iter(train_loader))
-    print(images.shape)     # [64, 1, 28, 28]   this is 64 images in the batch
-    print(labels.shape)     # [64]
+#     images, labels = next(iter(train_loader))
+#     print(images.shape)     # [64, 1, 28, 28]   this is 64 images in the batch
+#     print(labels.shape)     # [64]
 
 
 # We normalize because Neural Networks learn much faster when input is zero centered, it is centered around the mean.
